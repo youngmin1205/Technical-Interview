@@ -45,6 +45,9 @@ Average Answer</summary>
 <summary>
 Good Answer</summary>
 <div markdown="1">
+Tips:
+ - Always better to explain I used microservice you designed, even if it is small.
+  e.g. microservice design with third party API Gateway with Lambda
 </div>
 </details>
 
@@ -53,7 +56,7 @@ Good Answer</summary>
 <summary>
 Average Answer</summary>
 <div markdown="1">
-
+There are so many services, so it’s hard to determine when to use for what.
 </div>
 </details>
 
@@ -61,6 +64,10 @@ Average Answer</summary>
 <summary>
 Good Answer</summary>
 <div markdown="1">
+e.g. Auto scaling - thought using a regular auto scaling group would take care of high burst, high scaling criteria but it did not, so then had to do all the additional things.
+
+e.g. Cost optimize the application - tried to design a kubernetes application but there is no restrictions on how big the parts could be, how big the nodes could be. So the application is just spinning up stuff and incurring a lots of bill, even if we are not using whatever we are spinning. To fix it, Amazon CloudWatch Insights and AWS Compute Optimizer identify whether aws resources are optimal and offer recommendations to improve cost and performance 
+(Other option: the spot instances, AWS Cost Explorer for research purpose, third party(Kubecost, CloudHealth))
 </div>
 </details>
 
