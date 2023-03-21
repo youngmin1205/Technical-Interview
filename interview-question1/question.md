@@ -13,6 +13,18 @@ Put the VMs or EC2 in auto scaling group and use load balancer
 <summary>
 Good Answer</summary>
 <div markdown="1">
+For a big traffic day like Black Friday or Christmas, If I let load balancer to scale up naturally, it may not able to keep up with raised traffic.<br>
+To avoid that, will pre-warn my load balancer before the a big traffic event. Similarly, will use “Scheduled Scaling” for my auto scaling group. So all that necessary EC2s are up and running with application on it. So when traffic increases, they are ready to go.<br>
+
+In case load balancer needs to be scaled up naturally, will make sure Application Machine Image (AMI) is as light-weight as possible. The more unnecessary libraries you put into AMI, the longer it will take for EC2 to spin up.<br>
+
+If my application is connected to database, I will utilize the database proxy(e.g. RDS proxy), in case of high traffic, sometimes application will make rapid new connection to database and when the program stop querying the database for the particular instance, the connection will stay open. So when another traffic invocation comes, instead of reusing that lingering orphan connection, it will create **another new connection**. So this results in lots of orphan database connections taking up precious compute from your database. **Using RDS proxy will eliminate that. RDS proxy will maintain the database connection full, it will reuse the orphan database connections, it will terminate as needed.** <br>
+
+And on top of this, I will run IEM to ensure it can handle high traffic. IEM is a event that AWS runs before the big traffic day so it will scale up the load balancer, EC2, and then it will pass a high traffic to ensure that the application can handle it.<br>
+
+Beyond this, you can also talk about breaking the app into microservices (talks about advantages of microservices). One specific API might need to scale up way more than another microservice in same application. Using microservice, you can utilize that individual scaling of each APIs.<br>
+
+Just migrate my application to Kubernetes or Serverless then it will handle the big traffic days which is **not true,** because Kubernetes and Serverless, they all have their scaling limits.
 </div>
 </details>
 
