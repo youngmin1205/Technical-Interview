@@ -5,6 +5,7 @@
 <summary>
 Average Answer</summary>
 <div markdown="1">
+ <img width="333" alt="img3" src="https://user-images.githubusercontent.com/35551015/226612776-f9c527a8-66ff-4827-8695-5d82721a43e2.png"> <br>
 Put the VMs or EC2 in auto scaling group and use load balancer
 </div>
 </details>
@@ -13,6 +14,7 @@ Put the VMs or EC2 in auto scaling group and use load balancer
 <summary>
 Good Answer</summary>
 <div markdown="1">
+<img width="487" alt="img2" src="https://user-images.githubusercontent.com/35551015/226612899-769cdd1d-bf6e-4c99-8b0b-21a4f7a6e566.png"> <br>
 For a big traffic day like Black Friday or Christmas, If I let load balancer to scale up naturally, it may not able to keep up with raised traffic.<br>
 To avoid that, will pre-warn my load balancer before the a big traffic event. Similarly, will use “Scheduled Scaling” for my auto scaling group. So all that necessary EC2s are up and running with application on it. So when traffic increases, they are ready to go.<br>
 
