@@ -36,7 +36,7 @@ Just migrate my application to Kubernetes or Serverless then it will handle the 
 <summary>
 Average Answer</summary>
 <div markdown="1">
-
+Replicate to another region
 </div>
 </details>
 
@@ -44,6 +44,13 @@ Average Answer</summary>
 <summary>
 Good Answer</summary>
 <div markdown="1">
+There are different options to choose from depending on RTO and RPO.<br>
+
+Tip: Have one option ready in detail with example.<br>
+
+I would have two load balancers in two different regions. Those are fronting front end and maybe application server and Route53 can send traffic to appropriate region based on the latency, so even if one region goes down, Route53 will automatically send all the traffic to the other region.<br>
+
+For the database, if I use dynamoDB, I will use dynamoDB global tables which will automatically replicate along with continuous backup.
 </div>
 </details>
 
@@ -61,6 +68,11 @@ Use KMS, IAM and firewalls for security
 <summary>
 Good Answer</summary>
 <div markdown="1">
+Tip: <br>
+ - Explain what they do rather than just saying service names <br>
+ - Take one app (such as three tier app with EC2, or microservice running on Kubernetes, or Serverless and explain in detail) <br>
+
+Assuming my application is running in a serverless manner, so all the APIs are hosted in Amazon API Gateway and all the API back end are handled by Lambda and then that Lambda is going to different DBs.
 </div>
 </details>
 
