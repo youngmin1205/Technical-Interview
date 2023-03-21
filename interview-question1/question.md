@@ -45,9 +45,10 @@ Replicate to another region
 Good Answer</summary>
 <div markdown="1">
 There are different options to choose from depending on RTO and RPO.<br>
-
+<img width="454" alt="img5" src="https://user-images.githubusercontent.com/35551015/226614713-87cab72d-6f7e-4e0b-9594-63fe3c1cd56d.png"> <br>
 Tip: Have one option ready in detail with example.<br>
-
+<img width="459" alt="img6" src="https://user-images.githubusercontent.com/35551015/226614830-7f45b880-11f3-41bd-b636-768da4673d72.png">
+<br>
 I would have two load balancers in two different regions. Those are fronting front end and maybe application server and Route53 can send traffic to appropriate region based on the latency, so even if one region goes down, Route53 will automatically send all the traffic to the other region.<br>
 
 For the database, if I use dynamoDB, I will use dynamoDB global tables which will automatically replicate along with continuous backup.
