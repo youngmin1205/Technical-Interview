@@ -16,6 +16,7 @@ Good Answer</summary>
 </div>
 </details>
 
+
 ## Q. How did you do DR for your cloud application??
 <details>
 <summary>
@@ -32,15 +33,25 @@ Good Answer</summary>
 </div>
 </details>
 
+
 ## Q. How do you secure your application on the cloud?
 <details>
 <summary>
 Average Answer</summary>
 <div markdown="1">
-
+Use KMS, IAM and firewalls for security
 </div>
 </details>
 
+<details>
+<summary>
+Good Answer</summary>
+<div markdown="1">
+</div>
+</details>
+
+
+## Q. Describe an architecture you designed
 <details>
 <summary>
 Good Answer</summary>
@@ -50,6 +61,7 @@ Tips:
   e.g. microservice design with third party API Gateway with Lambda
 </div>
 </details>
+
 
 ## Q. Biggest challenge faces on cloud
 <details>
@@ -87,6 +99,7 @@ Good Answer</summary>
 <div markdown="1">
 </div>
 </details>
+
 
 ## Q. What is the difference between SQL and NoSQL?
 <details>
