@@ -74,7 +74,8 @@ Tip: <br>
  - Take one app (such as three tier app with EC2, or microservice running on Kubernetes, or Serverless and explain in detail) <br>
 
 Assuming my application is running in a serverless manner, so all the APIs are hosted in Amazon API Gateway and all the API back end are handled by Lambda and then that Lambda is going to different DBs.<br>
-
+<img width="276" alt="img7" src="https://user-images.githubusercontent.com/35551015/226617241-414dcdb1-e3e6-4728-9318-a1256e252a43.png">
+<br>
 Three different colored arrows = there are three microservices running <br>
 
 On user side, will implement authentication, secure data transit using SSL/TLS. On API Gateway, will implement authentication and authorization layer. The security of data at rest, you encrypt the data at rest using KMS. <br>
@@ -82,6 +83,8 @@ On user side, will implement authentication, secure data transit using SSL/TLS. 
 **Tip: The most important part is “Security of the application” part because this is where you probably get the most of the questions.** <br>
 e.g. Security of the application - Kubernetes <br>
 In Kubernetes, generally you have your application container image running within a pod and that pod is running in EC2. <br>
+<img width="515" alt="img8" src="https://user-images.githubusercontent.com/35551015/226617324-7e0da8ce-1f4e-4f9b-9a4b-98723db38b1b.png">
+<img width="521" alt="img9" src="https://user-images.githubusercontent.com/35551015/226617354-a6556d5d-7953-403f-b6a0-712e5a956cce.png">
 
 </div>
 </details>
