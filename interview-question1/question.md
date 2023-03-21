@@ -57,7 +57,7 @@ Good Answer</summary>
 Good Answer</summary>
 <div markdown="1">
 Tips:
- - Always better to explain I used microservice you designed, even if it is small.
+ - Always better to explain I used microservice you designed, even if it is small.<br>
   e.g. microservice design with third party API Gateway with Lambda
 </div>
 </details>
