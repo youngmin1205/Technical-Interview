@@ -32,7 +32,7 @@ Good Answer</summary>
 </div>
 </details>
 
-## Q.
+## Q. How do you secure your application on the cloud?
 <details>
 <summary>
 Average Answer</summary>
@@ -48,7 +48,56 @@ Good Answer</summary>
 </div>
 </details>
 
-## Q.
+## Q. Biggest challenge faces on cloud
+<details>
+<summary>
+Average Answer</summary>
+<div markdown="1">
+
+</div>
+</details>
+
+<details>
+<summary>
+Good Answer</summary>
+<div markdown="1">
+</div>
+</details>
+
+
+## Q. How do you pick one service vs another as a solutions architect?
+<details>
+<summary>
+Average Answer</summary>
+<div markdown="1">
+
+</div>
+</details>
+
+<details>
+<summary>
+Good Answer</summary>
+<div markdown="1">
+</div>
+</details>
+
+## Q. What is the difference between SQL and NoSQL?
+<details>
+<summary>
+Average Answer</summary>
+<div markdown="1">
+
+</div>
+</details>
+
+<details>
+<summary>
+Good Answer</summary>
+<div markdown="1">
+</div>
+</details>
+
+## Q. What is the Cloud Computing?
 <details>
 <summary>
 Average Answer</summary>
