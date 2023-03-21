@@ -73,7 +73,16 @@ Tip: <br>
  - Explain what they do rather than just saying service names <br>
  - Take one app (such as three tier app with EC2, or microservice running on Kubernetes, or Serverless and explain in detail) <br>
 
-Assuming my application is running in a serverless manner, so all the APIs are hosted in Amazon API Gateway and all the API back end are handled by Lambda and then that Lambda is going to different DBs.
+Assuming my application is running in a serverless manner, so all the APIs are hosted in Amazon API Gateway and all the API back end are handled by Lambda and then that Lambda is going to different DBs.<br>
+
+Three different colored arrows = there are three microservices running <br>
+
+On user side, will implement authentication, secure data transit using SSL/TLS. On API Gateway, will implement authentication and authorization layer. The security of data at rest, you encrypt the data at rest using KMS. <br>
+
+**Tip: The most important part is “Security of the application” part because this is where you probably get the most of the questions.** <br>
+e.g. Security of the application - Kubernetes <br>
+In Kubernetes, generally you have your application container image running within a pod and that pod is running in EC2. <br>
+
 </div>
 </details>
 
