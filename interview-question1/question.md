@@ -58,9 +58,11 @@ Good Answer</summary>
 <div markdown="1">
 Tips:
  - Always better to explain I used microservice you designed, even if it is small.<br>
-  e.g. microservice design with third party API Gateway with Lambda
+  e.g. microservice design with third party API Gateway with Lambda <br>
+ <img width="460" alt="img1" src="https://user-images.githubusercontent.com/35551015/226550195-2a578675-d1dd-407a-b888-afbbabe588c6.png">
 </div>
 </details>
+
 
 
 ## Q. Biggest challenge faces on cloud
