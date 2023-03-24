@@ -1,4 +1,5 @@
 # Solutions Architect Interview Questions AWS by Cloud With Raj (Youtube)
+Source: https://youtube.com/watch?v=8zsdpwvTxos&si=EnSIkaIECMiOmarE
 
 ## Q. How can you make your application scalable for a big traffic day?
 <details>
@@ -179,6 +180,7 @@ Cloud computing is the on-demand delivery of IT resources over the Internet with
 <br>
 
 **When you get "What is Service X?" - this kind of questions - Say the official definition and then add your own words**
+<img width="687" alt="img10" src="https://user-images.githubusercontent.com/35551015/227437060-24726f7e-6cb6-4b70-bfe4-50075c6d0d99.png">
 
 </div>
 </details>
