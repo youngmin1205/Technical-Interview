@@ -127,16 +127,15 @@ e.g. Cost optimize the application - tried to design a kubernetes application bu
 ## Q. How do you pick one service vs another as a solutions architect?
 <details>
 <summary>
-Average Answer</summary>
-<div markdown="1">
-
-</div>
-</details>
-
-<details>
-<summary>
 Good Answer</summary>
 <div markdown="1">
+
+**Ask Interviewer about system requirement** <br>
+e.g. 
+ - Load Balancer or API gateway <br>
+ - Serverless or EC2 <br>
+ - Kubernetes or Lambda<br>
+ - When to use Eventbridge or SQS or SNS<br>
 </div>
 </details>
 
@@ -146,14 +145,18 @@ Good Answer</summary>
 <summary>
 Average Answer</summary>
 <div markdown="1">
+SQL holds structured data and NoSQL holds unstructured data. You can define indexes and run queries on SQL. SQL is good for transactional system and NoSQL best for logging. 
+<br>
 
+ Why it is average answer? Very basic answer. It doesn’t highlight strengths of modern NoSQL. Modern NoSQL databases support indexes and used in transactional systems as well.
 </div>
 </details>
 
 <details>
 <summary>
-Good Answer</summary>
+Good Answer - WIP</summary>
 <div markdown="1">
+Go over basic properties - ACID vs CAP, different scaling behavior, example
 </div>
 </details>
 
@@ -162,7 +165,7 @@ Good Answer</summary>
 <summary>
 Average Answer</summary>
 <div markdown="1">
-
+Cloud computing is storing your data and servers in datacenters that you don’t own. You can run your applications on cloud. Some cloud examples are AWS, Azure, GCP.
 </div>
 </details>
 
@@ -170,5 +173,12 @@ Average Answer</summary>
 <summary>
 Good Answer</summary>
 <div markdown="1">
+
+**Highlight advantages of cloud computing** <br>
+Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like AWS.
+<br>
+
+**When you get "What is Service X?" - this kind of questions - Say the official definition and then add your own words**
+
 </div>
 </details>
