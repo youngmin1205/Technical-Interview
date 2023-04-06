@@ -34,7 +34,6 @@ Benefits: <br>
 - Elasticity  <br>
 - Cost savings  <br>
 - Deploy globally in minutes <br>
-- 
 </div>
 </details>
 
