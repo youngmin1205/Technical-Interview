@@ -139,7 +139,7 @@ https://velog.io/@swhan9404/NoSQL-의-종류별-특징
 </div>
 </details>
 
-## Q. How do you secure your 3-tier web application in the cloud?
+## Q. How do you secure your 3-tier web application in the cloud? (duplicate)
 <details>
 <summary>
 Answer - WIP</summary>
@@ -161,20 +161,35 @@ Once custoner buys something, they get recommended with other products to buy ..
 </div>
 </details>
 
-## Q. How do you scale your application for a big traffic day?
-<details>
-<summary>
-Answer - WIP</summary>
-<div markdown="1">
-</div>
-</details>
-
-
 ## Q. What happens behind the scenes when you hit enter on website URL, e.g. google.com?
 <details>
 <summary>
-Answer - WIP</summary>
+Answer - Korean</summary>
 <div markdown="1">
+
+1. 웹 브라우저에 URL을 입력하고 Enter 키 입력
+2. 웹 브라우저가 도메인명의 **IP 주소** 조회
+   브라우저는 인터넷에서 연결할 서버를 파악해야 합니다. 이렇게 하려면 입력한 도메인을 사용하여 웹 사이트를 호스팅하는 서버의 IP 주소를 조회해야 합니다. DNS 조회를 사용하여 이 작업을 수행합니다. <br>
+   DNS는 복잡하고 매우 빨라야 하기 때문에 DNS 데이터는 웹 브라우저 사이의 서로 다른 계층과 인터넷의 다양한 위치에 임시로 저장됩니다. 이를 캐시(Cache)라고 부르는데, 웹 브라우저는 고유한 캐시, 운영 체제 캐시, 라우터의 로컬 네트워크 캐시, 회사 네트워크 또는 인터넷 서비스 제공업체(ISP)의 DNS 서버 캐시를 확인합니다. <br>
+   만약, 웹 브라우저가 캐시 계층에서 IP 주소를 찾을 수 없는 경우 회사 네트워크 또는 ISP의 DNS 서버가 재귀적 DNS 조회를 수행합니다. 재귀적 DNS 조회는 인터넷에 있는 여러 DNS 서버를 요청하며, 검색될 때까지 DNS 레코드에 대해 더 많은 DNS 서버에 요청합니다. 웹 브라우저가 IP 주소로 DNS 레코드를 가져오면 인터넷에서 서버를 찾아 연결을 설정해야 합니다. <br>
+
+3. 웹 브라우저가 서버와의 TCP 연결 시작
+   인터넷에 연결된 웹 브라우저 요청 패킷은 일반적으로 TCP/IP(Transmission Control Protocol/Internet Protocol)라고 하는 전송 제어 프로토콜을 사용하여 라우터 장비, 인터넷 서비스 제공회사 교환기를 통해 이동되어, 통신 회사간 경로인 라우팅 테이블을 따라서 연결할 IP 주소가 있는 웹 서버를 찾습니다.  <br>
+    클라이언트와 서버가 SYN(synchronize: 연결 요청) 및 ACK(acknowledgement: 승인) 메시지를 교환하여 연결을 설정하는 3단계 프로세스입니다. <br>
+    1. 클라이언트는 인터넷을 통해 서버에 SYN 패킷을 보내 새 연결이 가능한지 여부를 묻는다.
+    2. 서버에 새 연결을 수락할 수 있는 열린 포트가 있는 경우, SYN/ACK 패킷을 사용하여 SYN 패킷의 ACK(승인)으로 응답한다.
+    3. 클라이언트는 서버로부터 SYN/ACK 패킷을 수신하고 ACK 패킷을 전송하여 승인한다.
+
+4. 웹 브라우저가 HTTP 요청을 서버로 전송
+   TCP 연결이 설정되면 데이터 전송이 시작됩니다. 브라우저는 웹 페이지를 요청하는 GET 요청을 보냅니다.
+   URL 요청에 대한 요청 라인: GET /blog/1620 HTTP/1.1 <br>
+   요청 라인은 서버에 /blog/1620에서 리소스를 가져오고 HTTP/1.1과 통신하기를 원한다고 알립니다.
+5. 웹 서버가 요청을 처리하고 응답을 다시 전송
+   서버는 요청을 받고 요청 라인, 헤더 및 본문의 정보를 기반으로 요청 처리 방법을 결정하고 응답을 보냅니다.
+6. 웹 브라우저가 콘텐츠 렌더링
+
+> DNS(Domain Name System)는 웹사이트의 IP 주소와 도메인 주소를 연결해주는 시스템이다. 인터넷의 모든 URL에는 고유한 IP 주소가 할당되어 있으며, IP 주소는 액세스 요청 웹 사이트의 서버를 호스트하는 컴퓨터에 속한다. 예를 들어, www.google.com의 IP 주소는 142.250.196.110이다. DNS의 주요 목적은 사람들이 쉽게 사이트 주소를 찾을 수 있도록 도와주는 것이다. 만약 DNS가 없다면 google.com과 같이 도메인 주소가 아닌, 142.250.196.110 라는 IP 주소를 하나하나 외워서 사이트에 접속해야 한다. DNS 가 자동으로 URL과 IP 주소를 매핑해주기 때문에, 쉽게 원하는 사이트에 접속할 수 있다.<br>
+
 </div>
 </details>
 
