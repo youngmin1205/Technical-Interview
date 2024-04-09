@@ -141,7 +141,7 @@ e.g.
 </details>
 
 
-## Q. What is the difference between SQL and NoSQL?
+## Q. What is the difference between SQL and NoSQL? (duplicate)
 <details>
 <summary>
 Average Answer</summary>
